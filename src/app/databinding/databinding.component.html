@@ -1,0 +1,20 @@
+<p>databinding works!</p>
+
+<h4> Interpolation</h4>
+
+<div>
+    {{name}} <input type = "text" value = "{{name}}" />
+</div>
+
+<h4> Property Binding</h4>
+
+<a [href] = "site" [innerHTML]="siteName"></a>
+<input type = "text" [value] ="name"/>
+
+<h4>Event Binding</h4>
+<button (click)="Greet()"> Greet </button>
+
+<h4>two way data Binding</h4>
+
+<input type="text" [(ngModel)] = "name" />
+

@@ -1,0 +1,45 @@
+<p>pipe works!</p>
+
+
+<ul> 
+    <li *ngFor="let employee of employees">
+            {{employee.code}} 
+            {{employee.name}}
+            {{employee.salary}}      
+    </li>
+ </ul>
+
+
+<div>
+    Data: {{employees | json}}
+</div> 
+
+<div
+    class="table-responsive"
+>
+    <table
+        class="table table-primary"
+    >
+        <thead>
+            <tr>
+                <th scope="col">code</th>
+                <th scope="col">salary</th>
+                <th scope="col">name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employees">
+                <td scope="row">{{emp.code | uppercase}}</td>
+                <td>{{emp.salary | currency:'INR'}}</td>
+                <td>{{emp.name }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<input type = "text" [(ngModel)]="name" />
+
+<div>
+    {{ '' | timeChangePipe}}
+ </div>   
+ 

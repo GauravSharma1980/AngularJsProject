@@ -25,3 +25,34 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+Angular is for end to end 
+React is a library 
+React follows functional style of working
+Angular follows oops concept in working
+
+Modules are like container that are kind of pkgs for 
+various components
+
+There could be only one default export but can have 
+many exports 
+
+Angular CLI is a tool by which we can create many types of components 
+
+A single page has many components like header , footer
+and side pane components
+
+ts.config.json is for configuation file for our project
+
+pkg.json is file that contain info to build our application prod and dev one
+
+pkg.lock-json file is the version information of each 
+dependency to be used on other machine
+
+npm install can be used if we do not have pkg-lock.json file in our application
+
+<ng-template> we use when we want to show some code in html conditionally
+
+*ng-for
+*ng-if
+are example of structural directive 

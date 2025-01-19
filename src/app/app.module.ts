@@ -3,14 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import MyComponent from './my.component';
+import { DatabindingComponent } from './databinding/databinding.component';
+import { FormsModule } from '@angular/forms';
+import { DirComponent } from './dir/dir.component';
+import { RendererComponent } from './renderer/renderer.component';
+import { PipeComponent } from './pipe/pipe.component';
+import { TimeChangePipePipe } from './time-change-pipe.pipe';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyComponent,
+    DatabindingComponent,
+    DirComponent,
+    RendererComponent,
+    PipeComponent,
+    TimeChangePipePipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
