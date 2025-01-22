@@ -10,6 +10,9 @@ import { DirComponent } from './dir/dir.component';
 import { RendererComponent } from './renderer/renderer.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { TimeChangePipePipe } from './time-change-pipe.pipe';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { ProductComponent } from './product/product.component';
+import { CategoryComponent } from './category/category.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { TimeChangePipePipe } from './time-change-pipe.pipe';
     DirComponent,
     RendererComponent,
     PipeComponent,
-    TimeChangePipePipe
+    TimeChangePipePipe,
+    NotfoundComponent,
+    ProductComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
