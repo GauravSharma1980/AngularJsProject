@@ -7,6 +7,9 @@ import { NotFoundError } from 'rxjs';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ProductComponent } from './product/product.component';
 import { CategoryComponent } from './category/category.component';
+import { AccountComponent } from './account/account.component';
+import { ProfileComponent } from './account/profile/profile.component';
+import { MembershipComponent } from './account/membership/membership.component';
 
 const routes: Routes = [
    {path: '',component: DatabindingComponent,pathMatch:'full'},
@@ -17,6 +20,13 @@ const routes: Routes = [
    {path: 'product',component:ProductComponent},
    {path: 'category',component:CategoryComponent},
    
+   {path: 'account',component:AccountComponent,children:[
+     {path: 'profile',component:ProfileComponent},
+     {path: 'membership',component:MembershipComponent}
+   ]
+  },
+
+
    {path: 'notfound',component:NotfoundComponent},
    {path: '**',redirectTo:'notfound'}//must be the last route only
 ];

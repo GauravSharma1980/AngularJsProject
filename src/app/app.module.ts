@@ -13,6 +13,9 @@ import { TimeChangePipePipe } from './time-change-pipe.pipe';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ProductComponent } from './product/product.component';
 import { CategoryComponent } from './category/category.component';
+import { AccountComponent } from './account/account.component';
+import { ProfileComponent } from './account/profile/profile.component';
+import { MembershipComponent } from './account/membership/membership.component';
 
 
 @NgModule({
@@ -26,7 +29,10 @@ import { CategoryComponent } from './category/category.component';
     TimeChangePipePipe,
     NotfoundComponent,
     ProductComponent,
-    CategoryComponent
+    CategoryComponent,
+    AccountComponent,
+    ProfileComponent,
+    MembershipComponent
   ],
   imports: [
     BrowserModule,
